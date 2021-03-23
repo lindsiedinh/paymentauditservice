@@ -16,14 +16,14 @@
     </parent>
 
     <properties>
-        <mapr-version>6.2.0-mapr</mapr-version>
+        <mapr-version>6.2.0.0-mapr</mapr-version>
         <mapr-streams-version>2.1.1.0-mapr-700-streams-6.2.0.0</mapr-streams-version>
     </properties>
 
     <repositories>
         <repository>
-            <id>mapr-maven</id>
-            <url>http://repository.mapr.com/maven</url>
+            <id>mapr-releases</id>
+            <url>https://repository.mapr.com/maven</url>
             <releases><enabled>true</enabled></releases>
             <snapshots><enabled>false</enabled></snapshots>
         </repository>
