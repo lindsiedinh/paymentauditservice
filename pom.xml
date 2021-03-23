@@ -16,8 +16,8 @@
     </parent>
 
     <properties>
-        <mapr-version>6.0.0-mapr</mapr-version>
-        <mapr-streams-version>0.9.0.0-mapr-1801-streams-6.0.0</mapr-streams-version>
+        <mapr-version>6.2.0-mapr</mapr-version>
+        <mapr-streams-version>2.1.1.0-mapr-700-streams-6.2.0.0</mapr-streams-version>
     </properties>
 
     <repositories>
@@ -66,8 +66,7 @@
 
         <dependency>
             <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-validator</artifactId>
-            <version>5.2.4.Final</version>
+            <artifactId>hibernate-validator</artifactId>            
         </dependency>
 
     </dependencies>
