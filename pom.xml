@@ -17,15 +17,14 @@
 
     <properties>
         <mapr-version>6.2.0.0-mapr</mapr-version>
-        <mapr-streams-version>2.1.1.0-mapr-700-streams-6.2.0.0</mapr-streams-version>
+        <mapr-streams-version>2.1.1.0-mapr-700</mapr-streams-version>
     </properties>
 
-    <repositories>
-        <repository>
-            <id>mapr-releases</id>
-            <url>https://repository.mapr.com/maven</url>
-            <releases><enabled>true</enabled></releases>
+    <repositories> 
+        <repository> <id>mapr-releases</id>
+            <url>https://repository.mapr.com/maven/</url>
             <snapshots><enabled>false</enabled></snapshots>
+            <releases><enabled>true</enabled></releases>
         </repository>
     </repositories>
 
@@ -53,6 +52,11 @@
             <groupId>org.apache.kafka</groupId>
             <artifactId>kafka-clients</artifactId>
             <version>${mapr-streams-version}</version>
+        </dependency>            
+        <dependency>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>connect-runtime</artifactId>
+            <version>2.1.1.0-mapr-700</version>
         </dependency>
         <dependency>
             <groupId>com.mapr.streams</groupId>
