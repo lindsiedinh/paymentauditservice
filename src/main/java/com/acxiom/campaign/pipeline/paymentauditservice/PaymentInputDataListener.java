@@ -30,7 +30,7 @@ public class PaymentInputDataListener {
 
     private Gson gson = new Gson();
 
-    @KafkaListener(topics = "${message.topic.name}", groupId = "${kafka.consumerGrpId}", containerFactory = "kafkaListenerContainerFactory")
+    @KafkaListener(topics = "${message.topic.name}", group = "${kafka.consumerGrpId}", containerFactory = "kafkaListenerContainerFactory")
     public void receivePaymentInputData(String message) {
 
         PaymentInputData paymentInputData = convertJSONToDataObject(message);
